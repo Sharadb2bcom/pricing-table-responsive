@@ -1,0 +1,86 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: url("https://images.unsplash.com/photo-1540205082-e56e180508e6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cc8260f6b8370c4e32ab6bfc1034254&w=1000&q=80") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.pricing-table {
+  display: flex;
+  max-width: 1200px;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.col {
+  flex: 25%;
+  max-width: 320px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.table {
+  background: #fff;
+  padding: 40px 20px;
+  position: relative;
+  font-family: 'montserrat',sans-serif;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000070;
+}
+
+.table h2 {
+  text-transform: uppercase;
+}
+.table ul {
+  margin: 0;
+  padding: 0;
+}
+.table li {
+  padding: 10px 0;
+  list-style: none;
+}
+.price {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.price span {
+  display: block;
+  font-size: 14px;
+}
+.table a {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #FEA47F;
+  border-radius: 40px;
+  color:  #FEA47F;
+  display: block;
+  font-size: 14px;
+  padding: 10px 0;
+  margin: 10px 0;
+  transition: 0.5s linear;
+}
+.table a:hover {
+  background:  #FEA47F;
+  color: #fff;
+}
+.pop {
+  background: #FEA47F;
+  color: #fff;
+  transform: rotate(45deg);
+  padding: 10px 40px;
+  position: absolute;
+  top: 16px;
+  right: -34px;
+}
+
+@media  screen and (max-width: 980px) {
+  .col {
+    flex: 50%;
+  }
+}
+@media  screen and (max-width: 700px) {
+  .col {
+    flex: 100%;
+  }
+}
